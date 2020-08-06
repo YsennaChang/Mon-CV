@@ -15,7 +15,7 @@
         
 		<nav>
 			<aside>
-			    <img src="Photo Catherine mini3.jpg" alt="Photo Catherine"/></a>
+            <a><img src="Photo Catherine mini3.jpg" alt="Photo Catherine"/></a>
             <h2> CONTACT </h2>
             <p>
                 Adresse<br/>
@@ -65,7 +65,7 @@
             </aside>
         </nav>
             
-
+        <section>
 			<article>
 
                 <div id="formation">
