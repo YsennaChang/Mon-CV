@@ -1,4 +1,349 @@
+/* *
+{
+    border: 1px black solid;
+} */
+
+/* Fonts============================================================================ */
+
+@font-face {
+    font-family: 'starkregular';
+    src: url('fonts/stark-webfont.woff2') format('woff2'),
+         url('fonts/stark-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('fonts/oxygen-regular-webfont.woff2') format('woff2'),
+         url('fonts/oxygen-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+p:hover, h1:hover, h2:hover, ul:hover
+{
+    padding-left: 2px;
+    border-left: 2px rgb(38,50,56) solid;
+}
+
+h1, h2, h3
+{
+    font-family : 'starkregular';
+}
+p, li
+{
+    font-family : 'oxygenregular';
+    text-align: justify;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(38,50,56);
+    word-wrap: normal;
+}
+a:hover
+{
+    font-weight: bold;
+}
+h1
+{
+    color:rgb(38,50,56);
+}
+
+h1 span
+{
+    color: rgb(120,144,156);
+}
+
+i
+{
+    color:rgb(38,50,56);
+}
+
+body
+{
+    max-width: 1024px;
+    margin: auto;
+    border: 1px rgb(38,50,56) solid;
+}
+
+#running
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 8px 12px 8px 12px;
+    border-radius: 100%;
+}
+#gamepad
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 10px 6px 10px 6px;
+    border-radius: 100%;
+}
+#tools
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 8px 9px 8px 9px;
+    border-radius: 100%;
+}
+
+#icon
+{
+    margin: 10px 50px 30px 50px;
+    display:flex;
+    justify-content: space-between;
+}
+#title-line
+{
+    width: 45px;
+    border-top: 2px rgb(38,50,56) solid;
+}
+#name p
+{
+    margin-bottom: 3px;
+
+}
+
+@media screen and (max-width: 1024px)
+{
+    .space
+    {
+        display:none;
+    }
+
+}
+/* header===================================================================== */
+
+header
+{
+    display : flex;
+    align-items: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+#name
+{
+    padding-left: 25px;
+}
+
+#name h1
+{
+    margin-bottom: 0px;
+}
+
+#name p
+{
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 1024px)
+{
+    header
+    {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* PHOTO ============================================================================= */
+#frame-photo
+{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(120,144,156);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 1024px)
+{
+    #frame-photo
+    {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#photo-Catherine
+{
+    border: 3px  rgb(38,50,56) solid;
+    height: 150px;
+    width: 150px;
+    background: url("Photo Catherine mini3.jpg") no-repeat;
+    border-radius: 50%;
+}
+
+/* aside======================================================================= */
+
+aside h2
+{
+    color: rgb(120,144,156);
+    background-color: rgb(38,50,56);
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border: 1px rgb(38,50,56) solid;
+}
+aside p
+{
+    margin: 10px 25px 10px 25px;
+    color: rgb(38,50,56);
+}
+aside img
+{
+    padding-top: 5px;
+}
 aside
 {
-    background-color:rgb(255,160,0);
+    width: 300px;
+    /* height: 100%; */
+    background-color:rgb(120,144,156);
+    display: flex;
+    flex-direction: column;
+
 }
+@media screen and (max-width: 1024px)
+{
+    aside
+    {
+        width: 100%;
+        margin: auto;
+    }
+    aside p
+    {
+        text-align: center;
+        
+    }
+    #about-me p
+    {
+        text-align: justify;
+    }
+}
+#contact
+{
+    flex: 0 1 auto;
+}
+#about-me
+{
+    flex: 1 1 auto;
+}
+#icon
+{
+    flex: 0 1 auto;
+}
+/* section ======================================================================= */
+
+section
+{
+    display: flex;
+    margin-top: 0px;
+}
+
+article h2
+{
+    padding-bottom: 3px;
+    border-bottom: 2px rgb(38,50,56) solid;
+}
+@media screen and (max-width: 1024px)
+{
+    section
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+    }
+}
+p i
+{
+    padding-top: 5px;
+}
+article
+{
+    max-width: 674px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+
+.category
+{
+    display: grid;
+    grid-template-columns: 1fr 5fr 10fr;
+}
+
+@media screen and (max-width: 500px)
+{
+    .category
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.date-place
+{
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.reco
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;   
+    justify-content: space-around;
+    
+}
+.reco p
+{
+    text-align: left;
+    
+}
+.reco a
+{
+    word-break: break-word;
+    text-align: center ;
+}
+
+@media screen and (max-width: 800px)
+{
+    .reco
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .reco p
+    {
+        text-align: center;        
+    }
+}
+
+/* formatage des puces de liste */
+ul
+{
+	list-style-type: none;
+}
+
+li
+{
+    text-indent: -0.6em;
+}
+
+li:before {    
+    font-family: 'FontAwesome';
+    content: '\f121';
+    margin:0 5px 0 -15px;
+    color: rgb(38,50,56);
+    }
