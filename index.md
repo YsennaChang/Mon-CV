@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/d8f867de61.js" crossorigin="anonymous"></script>
-        <title> CV Catherine CHANG </title>
-        
+        <title> CV Catherine CHANG </title>   
 	</head>
 	<body>
         <header>
@@ -18,12 +17,10 @@
                 <p>
                     Développeuse Web Front/Back-end 
                     <div id="title-line"></div>
-                </p>
-                
+                </p>   
             </div>
         </header>
         <section> 
-            
             <aside>
                 <h2> CONTACT </h2>
                 <div id="contact">                   
@@ -44,17 +41,14 @@
                         <strong>Web</strong><br/>
                         <a href="https://ysennachang.github.io/catherinechang.github.io/">Mon CV en ligne</a>
                     </p>
-                    
                     <p>
                         <strong>Discord</strong><br/>
                         Senna#6823
                     <p>
-                        <strong>Langues</strong><br/>
-                        
+                        <strong>Langues</strong><br/>                        
                         <img src="france-flag-waving-50px.png" alt="Drapeau Français"/>
                         <img src="united-kingdom-flag-waving-50px.png" alt="Drapeau Anglais"/>
-                        <img src="china-flag-waving-50px.png" alt="Drapeau Chinois"/>
-                        
+                        <img src="china-flag-waving-50px.png" alt="Drapeau Chinois"/>                        
                     </p>
                 </div>
                 <h2> A PROPOS DE MOI </h2>
@@ -81,8 +75,7 @@
                 </div>
                 <div class="category">
                     <p><i class="far fa-dot-circle"></i></p>
-                    <div class="date-place">
-                        
+                    <div class="date-place">                        
                         <p> 
                             <strong>2021-2020</strong><br/>
                             PARIS, 75
@@ -96,11 +89,9 @@
                         <p>
                             Titre RNCP de niveau III, formation en ligne. <br/>
                             Au programme : HTML5, CSS3, github, VScode, Sass, SEO, WCAG, Javascript, Bootstrap4, Node.js, Express, MongoDB, OWASP, API REST, MySQL, Vue.js
-                        </p> 
-                                                           
+                        </p>                                                            
                     </div>
                 </div>
-
                 <div class="category"> 
                     <p><i class="far fa-circle"></i></p>
                     <div class="date-place">
@@ -146,7 +137,6 @@
                             PARIS 9EME
                         </p>
                     </div>
-
                     <div class="establishment">
                         <p>
                             <strong>LYCEE JACQUES DECOUR</strong><br/>
@@ -156,8 +146,7 @@
                             Mathématiques, Physique, Sciences de l'Ingénieur (MPSI)
                         </p>                    
                     </div>
-                </div>
-                    
+                </div>                    
                 <div class="category-title">
                     <h2>
                         <i class="fas fa-briefcase"></i>
@@ -239,7 +228,6 @@
                         RECOMMANDATIONS
                     </h2>
                 </div>
-
                 <div class="reco">
                     <p>
                         <strong>LAURENT MACE</strong><br/>
