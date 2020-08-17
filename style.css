@@ -2,7 +2,6 @@
 {
     border: 1px black solid;
 } */
-
 /* Fonts============================================================================ */
 
 @font-face {
@@ -20,8 +19,8 @@
          url('fonts/oxygen-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 p:hover, h1:hover, h2:hover, ul:hover
 {
     padding-left: 2px;
@@ -32,6 +31,7 @@ h1, h2, h3
 {
     font-family : 'starkregular';
 }
+
 p, li
 {
     font-family : 'oxygenregular';
@@ -44,10 +44,12 @@ a
     color: rgb(38,50,56);
     word-wrap: normal;
 }
+
 a:hover
 {
     font-weight: bold;
 }
+
 h1
 {
     color:rgb(38,50,56);
@@ -77,6 +79,7 @@ body
     padding: 8px 12px 8px 12px;
     border-radius: 100%;
 }
+
 #gamepad
 {
     font-size: 2em;
@@ -84,7 +87,8 @@ body
     padding: 10px 6px 10px 6px;
     border-radius: 100%;
 }
-#tools
+
+#utensils
 {
     font-size: 2em;
     border: 2px rgb(38,50,56) solid;
@@ -98,30 +102,29 @@ body
     display:flex;
     justify-content: space-between;
 }
+
 #title-line
 {
     width: 45px;
     border-top: 2px rgb(38,50,56) solid;
 }
+
 #name p
 {
     margin-bottom: 3px;
-
 }
-
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 500px)
 {
-    .space
+    article p, h2
     {
-        display:none;
+        text-align: center;
     }
-
 }
 /* header===================================================================== */
 
 header
 {
-    display : flex;
+    display: flex;
     align-items: center;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -151,7 +154,16 @@ header
     }
 }
 
+@media screen and (max-width: 800px)
+{
+    .title-line
+    {
+        align-items: center;
+    }
+}
+
 /* PHOTO ============================================================================= */
+
 #frame-photo
 {
     width: 300px;
@@ -161,6 +173,7 @@ header
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width: 1024px)
 {
     #frame-photo
@@ -189,11 +202,13 @@ aside h2
     padding: 10px 0 10px 0;
     border: 1px rgb(38,50,56) solid;
 }
+
 aside p
 {
     margin: 10px 25px 10px 25px;
     color: rgb(38,50,56);
 }
+
 aside img
 {
     padding-top: 5px;
@@ -207,6 +222,7 @@ aside
     flex-direction: column;
 
 }
+
 @media screen and (max-width: 1024px)
 {
     aside
@@ -224,10 +240,12 @@ aside
         text-align: justify;
     }
 }
+
 #contact
 {
     flex: 0 1 auto;
 }
+
 #about-me
 {
     flex: 1 1 auto;
@@ -236,6 +254,7 @@ aside
 {
     flex: 0 1 auto;
 }
+
 /* section ======================================================================= */
 
 section
@@ -244,11 +263,12 @@ section
     margin-top: 0px;
 }
 
-article h2
+main h2
 {
     padding-bottom: 3px;
     border-bottom: 2px rgb(38,50,56) solid;
 }
+
 @media screen and (max-width: 1024px)
 {
     section
@@ -260,11 +280,13 @@ article h2
         margin: auto;
     }
 }
+
 p i
 {
     padding-top: 5px;
 }
-article
+
+main
 {
     max-width: 674px;
     display: flex;
@@ -273,8 +295,7 @@ article
     padding-left: 25px;
 }
 
-
-.category
+article
 {
     display: grid;
     grid-template-columns: 1fr 5fr 10fr;
@@ -282,7 +303,7 @@ article
 
 @media screen and (max-width: 500px)
 {
-    .category
+    article
     {
         display: flex;
         flex-direction: column;
@@ -306,11 +327,13 @@ article
     justify-content: space-around;
     
 }
+
 .reco p
 {
     text-align: left;
     
 }
+
 .reco a
 {
     word-break: break-word;
