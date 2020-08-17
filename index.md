@@ -17,7 +17,7 @@
                 <p>
                     Développeuse Web Front/Back-end 
                     <div id="title-line"></div>
-                </p>   
+                </p>
             </div>
         </header>
         <section> 
