@@ -266,13 +266,9 @@ section
     margin-top: 0px;
 }
 
-section h2
-{
-    margin-top: 20px;
-}
-
 main h2
 {
+    margin-top: 20px;
     padding-bottom: 3px;
     border-bottom: 2px rgb(38,50,56) solid;
 }
