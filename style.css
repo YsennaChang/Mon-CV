@@ -21,6 +21,14 @@
     font-style: normal;
 }
 
+/* Elements principaux============================================================================ */
+body
+{
+    max-width: 1024px;
+    margin: auto;
+    border: 1px rgb(38,50,56) solid;
+}
+
 p:hover, h1:hover, h2:hover, ul:hover
 {
     padding-left: 2px;
@@ -60,40 +68,14 @@ h1 span
     color: rgb(120,144,156);
 }
 
+h2
+{
+    margin-top: 0px;
+}
+
 i
 {
     color:rgb(38,50,56);
-}
-
-body
-{
-    max-width: 1024px;
-    margin: auto;
-    border: 1px rgb(38,50,56) solid;
-}
-
-#running
-{
-    font-size: 2em;
-    border: 2px rgb(38,50,56) solid;
-    padding: 8px 12px 8px 12px;
-    border-radius: 100%;
-}
-
-#gamepad
-{
-    font-size: 2em;
-    border: 2px rgb(38,50,56) solid;
-    padding: 10px 6px 10px 6px;
-    border-radius: 100%;
-}
-
-#utensils
-{
-    font-size: 2em;
-    border: 2px rgb(38,50,56) solid;
-    padding: 8px 9px 8px 9px;
-    border-radius: 100%;
 }
 
 #icon
@@ -103,16 +85,6 @@ body
     justify-content: space-between;
 }
 
-#title-line
-{
-    width: 45px;
-    border-top: 2px rgb(38,50,56) solid;
-}
-
-#name p
-{
-    margin-bottom: 3px;
-}
 @media screen and (max-width: 500px)
 {
     article p, h2
@@ -142,6 +114,13 @@ header
 #name p
 {
     margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+#title-line
+{
+    width: 45px;
+    border-top: 2px rgb(38,50,56) solid;
 }
 
 @media screen and (max-width: 1024px)
@@ -152,12 +131,12 @@ header
         flex-direction: column;
         align-items: center;
     }
-}
-
-@media screen and (max-width: 800px)
-{
-    .title-line
+    #name
     {
+        padding-left: 0px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;        
         align-items: center;
     }
 }
@@ -193,6 +172,30 @@ header
 }
 
 /* aside======================================================================= */
+
+#running
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 8px 12px 8px 12px;
+    border-radius: 100%;
+}
+
+#gamepad
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 10px 6px 10px 6px;
+    border-radius: 100%;
+}
+
+#utensils
+{
+    font-size: 2em;
+    border: 2px rgb(38,50,56) solid;
+    padding: 8px 9px 8px 9px;
+    border-radius: 100%;
+}
 
 aside h2
 {
@@ -278,7 +281,7 @@ main h2
         flex-direction: column-reverse;
         align-items: center;
         margin: auto;
-    }
+    }    
 }
 
 p i
@@ -308,6 +311,10 @@ article
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    article p
+    {
+        margin-bottom: 0px;
     }
 
 }
@@ -340,7 +347,7 @@ article
     text-align: center ;
 }
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 768px)
 {
     .reco
     {
