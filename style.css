@@ -266,6 +266,11 @@ section
     margin-top: 0px;
 }
 
+section h2
+{
+    margin-top: 20px;
+}
+
 main h2
 {
     padding-bottom: 3px;
