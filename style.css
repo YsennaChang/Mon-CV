@@ -29,7 +29,7 @@ body
     border: 1px rgb(38,50,56) solid;
 }
 
-p:hover, h1:hover, h2:hover, ul:hover
+p:hover, h1:hover, h2:hover, h3:hover, ul:hover
 {
     padding-left: 2px;
     border-left: 2px rgb(38,50,56) solid;
@@ -87,7 +87,7 @@ i
 
 @media screen and (max-width: 500px)
 {
-    article p, h2
+    article p, h2, h3
     {
         text-align: center;
     }
@@ -258,15 +258,15 @@ aside
     flex: 0 1 auto;
 }
 
-/* section ======================================================================= */
+/* Article ======================================================================= */
 
-section
+main
 {
     display: flex;
     margin-top: 0px;
 }
 
-main h2
+article h2
 {
     padding-bottom: 3px;
     border-bottom: 2px rgb(38,50,56) solid;
@@ -274,7 +274,7 @@ main h2
 
 @media screen and (max-width: 1024px)
 {
-    section
+    main
     {
         width:100%;
         display: flex;
@@ -283,7 +283,7 @@ main h2
         margin: auto;
     }
 
-    main h2
+    article h2
     {
         margin-top: 20px;
     }
@@ -294,7 +294,7 @@ p i
     padding-top: 5px;
 }
 
-main
+article
 {
     max-width: 674px;
     display: flex;
@@ -303,7 +303,7 @@ main
     padding-left: 25px;
 }
 
-article
+section
 {
     display: grid;
     grid-template-columns: 1fr 5fr 10fr;
@@ -311,25 +311,25 @@ article
 
 @media screen and (max-width: 500px)
 {
-    article
+    section
     {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    article p
+    section p
     {
         margin-bottom: 0px;
     }
 
 }
 
-.date-place
+/* .date-place
 {
     width: 200px;
     padding-left: 10px;
     padding-right: 10px;
-}
+} */
 
 .reco
 {
